@@ -1,0 +1,8 @@
+// styles.scss
+@use 'variables' as *;  // Variablen zuerst laden
+@use 'variables-css' as *;
+//@use 'mixins' as *;     // Mixins nach Funktionen
+@use 'functions' as *;  // Funktionen nach Variablen
+@use 'fonts' as *;
+@use 'main' as *;
+

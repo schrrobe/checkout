@@ -1,0 +1,73 @@
+$path-main: '@assets/';
+$font-path: '#{$path-main}fonts/';
+$img-path: '#{$path-main}img/';
+
+$colors: (
+  primary: #ef7c00,
+  primary-dark: #ef6400,
+  primary-darker: #ef5600,
+
+  secondary-light: #fdf2e5,
+  secondary: #fce5cc,
+  secondary-dark: #fcdcb9,
+  secondary-darker: #ffd2a3,
+
+  shade-light: #f6f6f6,
+  shade: #afafaf,
+  shade-dark: #666666,
+  shade-darker: #333333,
+  shade-darkest: #0000001a,
+
+  white: #fff,
+  black: #000000,
+
+  success: #819f17,
+  error: #ee2f24,
+  info: #3a9ae5,
+  danger: #ae2727,
+
+  transparent: transparent,
+);
+
+$fonts: (
+  primary,
+  tertiary,
+);
+
+$fontSizes: (xxs, xs, s, m, l, xl, 2xl, 3xl, 4xl, 5xl, 6xl, 7xl, 8xl, 9xl, 10xl, 11xl);
+
+$fontWeights: (
+  light: 300,
+  regular: 400,
+  bold: 500,
+  extra-bold: 600,
+);
+
+$spacings: (
+  zero: 0,
+  2xs: 5px,
+  xs: 10px,
+  s: 15px,
+  m: 20px,
+  l: 30px,
+  xl: 40px,
+  2xl: 60px,
+  3xl: 100px,
+);
+
+$breakpoints: (
+  xs: 400px,
+  s: 476px,
+  m: 768px,
+  l: 1024px,
+  xl: 9999px,
+);
+
+$maxWidths: (
+  m: 950px,
+  content: 1000px,
+  layout: 1800px,
+  full: 100%,
+);
+
+$grid-total-columns: 12;

@@ -1,0 +1,1 @@
+export { default as HeadlineType } from './Headline';

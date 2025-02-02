@@ -1,0 +1,3 @@
+@function getColumnWidth($columns) {
+  @return calc(100% / var(--grid-columns) * #{$columns});
+}

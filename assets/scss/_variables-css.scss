@@ -1,0 +1,83 @@
+:root {
+  --font-primary: 'ClassicGrotesque', arial, helvetica, sans-serif;
+  --font-headline: 'Roboto', sans-serif;
+  --font-tertiary: 'Druk Web', serif;
+  --font-size-base: 16px;
+  --font-size-xxs: .75rem;
+  --font-size-xs: .875rem;
+  --font-size-s: 1rem;
+  --font-size-m: 1.125rem;
+  --font-size-l: 1.25rem;
+  --font-size-xl: 1.375rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.625rem;
+  --font-size-4xl: 1.75rem;
+  --font-size-5xl: 1.875rem;
+  --font-size-6xl: 2rem;
+  --font-size-7xl: 2.25rem;
+  --font-size-8xl: 2.5rem;
+  --font-size-9xl: 2.75rem;
+  --font-size-10xl: 3rem;
+  --font-size-11xl: 4rem;
+
+  --line-height-s: 1.1em;
+  --line-height-m: 1.2em;
+  --line-height-l: 1.3em;
+  --line-height-xl: 1.4em;
+  --line-height-2xl: 1.5em;
+  --line-height-3xl: 1.625em;
+  --line-height-4xl: 1.75em;
+
+  //@media (min-width: #{map-get($breakpoints, m)}) {
+  //  --font-size-h1: 40px;
+  //  --font-size-h2: 32px;
+  //
+  //  --line-height-h1: 1.2;
+  //  --line-height-h2: 1.25;
+  //}
+}
+
+//  @each $fontWeightName, $fontWeightValue in $fontWeights {
+//    --font-weight-#{$fontWeightName}: #{$fontWeightValue};
+//  }
+//
+//  @each $colorName, $colorValue in $colors {
+//    --color-#{$colorName + ""}: #{$colorValue};
+//  }
+//
+//  @each $spacingName, $spacingValue in $spacings {
+//    --space-#{$spacingName}: #{$spacingValue};
+//  }
+//
+//  @include bp(m) {
+//    @each $maxWidthName, $maxWidthValue in $maxWidths {
+//      --max-width-#{$maxWidthName}: #{$maxWidthValue};
+//    }
+//  }
+//
+//  --input-height: 42px;
+//
+//  --grid-columns: #{$grid-total-columns};
+//  --grid-gutter: 16px;
+//  --grid-gutter-half: calc(var(--grid-gutter) / 2);
+//
+//  --page-margin: 24px;
+//
+//  @media (min-width: #{map-get($breakpoints, l)}) {
+//    --page-margin: 48px;
+//  }
+//
+//  --page-padding: 20px;
+//
+//  @include bp(m) {
+//    --page-padding: 34px;
+//  }
+//
+//  @include bp(l) {
+//    --page-padding: 17px;
+//  }
+//
+//  --page-width-m: 768px;
+//  --page-width-l: 1000px;
+//  --page-width-xl: 1280px;
+//}
