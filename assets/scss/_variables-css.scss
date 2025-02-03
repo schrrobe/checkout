@@ -28,6 +28,34 @@
   --line-height-3xl: 1.625em;
   --line-height-4xl: 1.75em;
 
+  --ui-text: oklch(.371 0 0);
+  --ui-text-grey: oklch(.922 0 0);
+  --ui-bg:oklch(.205 0 0);
+  --vis-color-main: var(--vis-color0);
+  --vis-color-main-light: #d0e0fe;
+  --vis-color-main-dark: #3c588a;
+  --vis-color-grey: #2a2a2a;
+  --vis-color0: #4D8CFD;
+  --vis-color1: #FF6B7E;
+  --vis-color2: #F4B83E;
+  --vis-color3: #A6CC74;
+  --vis-color4: #00C19A;
+  --vis-color5: #6859BE;
+  --vis-dark-color0: #4D8CFD;
+  --vis-dark-color1: #FF6B7E;
+  --vis-dark-color2: #FFC16D;
+  --vis-dark-color3: #A6CC74;
+  --vis-dark-color4: #00C19A;
+  --vis-dark-color5: #7887E0;
+
+  --ui-primary: oklch(.792 .209 151.711);
+  --ui-secondary: oklch(.707 .165 254.624);
+  --ui-success: oklch(.792 .209 151.711);
+  --ui-info: oklch(.707 .165 254.624);
+  --ui-warning: oklch(.852 .199 91.936);
+  --ui-error: oklch(.704 .191 22.216);
+
+
   //@media (min-width: #{map-get($breakpoints, m)}) {
   //  --font-size-h1: 40px;
   //  --font-size-h2: 32px;
