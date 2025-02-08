@@ -1,27 +1,40 @@
 <template>
-  <component :is="tag" :style="{ '--font-size': fontSize, '--font-weight': fontWeight }">
+  <component :is="tag" :class="classes" :style="{ '--font-size': sizeOfFont, '--font-weight': fontWeight }">
     <slot></slot>
+    {{size}}
   </component>
 </template>
 
 <script setup lang="ts">
 import type { PropType } from 'vue';
 import type { textTags, fontWeight } from '~/components/elements/text/types';
-import FontSize from '~/components/foundation/FontSize';
+// import FontSize from '~/components/foundation/FontSize';
+import FontSize from '~/components/elements/text/types';
 
 const props = defineProps({
+  /**
+   * Define the font size of the text as defined in the design
+   * @type { 'p' | 'div' | 'span' }
+   * */
   tag: {
     type: String as PropType<textTags>,
     default: 'p',
   },
+
+  /**
+   * Define the font size of the text as defined in the design
+   * @type {'base' | 'xxs' | 'xs' | 's' | 'm' | 'l' | 'xl'}
+   * */
   size: {
     type: String as PropType<keyof typeof FontSize>,
     default: 'base',
   },
+
   /**
-   * Define the font weight of the headline as defined in the design
+   * Define the font weight of the text as defined in the design
    * @type {'regular' | 'medium' | 'semibold' | 'bold' | 'extra-bold'}
    * */
+
   fontWeight: {
     type: String as PropType<fontWeight>,
     default: 'regular', // Standardwert
@@ -29,10 +42,17 @@ const props = defineProps({
 });
 
 // Berechne die Schriftgröße basierend auf der `size`-Prop
-const fontSize = computed(() => FontSize[props.size]);
+const sizeOfFont = computed(() => FontSize[props.size]);
 
 // Verwende die `fontWeight`-Prop direkt als reaktive Variable
 const fontWeight = computed(() => props.fontWeight);
+
+const classes = computed(()=> {
+  return {
+    paragraph: true,
+    [`font-size--${props.size}`]: props.size,
+  }
+})
 </script>
 
 <style scoped lang="scss">
@@ -49,6 +69,7 @@ div,
   color: inherit;
   text-transform: inherit;
   text-align: inherit;
+  line-height: calc(var(--font-size) * 1.1);
 
   &:last-child {
     margin-bottom: 0;

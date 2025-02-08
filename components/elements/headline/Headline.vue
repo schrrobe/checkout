@@ -15,10 +15,19 @@ import type {PropType} from "vue";
 import {computed} from "vue";
 
 const props = defineProps({
+  /**
+   * Define the tag of the headline
+   * @type {'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'}
+   * */
   tag: {
     type: String as PropType<HeadlineType>,
     default: HeadlineType.H1
   },
+
+  /**
+   * Define the tag of the headline
+   * @type {'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'}
+   * */
   size: {
     type: String as  PropType<HeadlineType>,
     default: HeadlineType.H1

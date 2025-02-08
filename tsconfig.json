@@ -1,4 +1,49 @@
 {
-  // https://nuxt.com/docs/guide/concepts/typescript
-  "extends": "./.nuxt/tsconfig.json"
+  "extends": "./.nuxt/tsconfig.json", // Erweitert die Nuxt-Konfiguration
+  "compilerOptions": {
+    // Basis-Einstellungen
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+    // Pfad-Aliase (falls benötigt)
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"], // Beispiel für Pfad-Aliase
+      "~/*": ["./*"]      // Nuxt-spezifische Aliase
+    },
+
+    // Storybook-spezifische Einstellungen
+    "types": [
+      "vite/client", // Für Vite-Unterstützung
+      "node",        // Für Node.js-Typen
+      "@storybook/vue3" // Storybook-Typen
+    ]
+  },
+  "include": [
+    // Nuxt-spezifische Dateien
+    ".nuxt/**/*",
+    "nuxt.config.ts",
+
+    // Deine eigenen Dateien
+    "components/**/*",
+    "stories/**/*",
+    "src/**/*",
+
+    // Storybook-spezifische Dateien
+    "*.stories.ts",
+    "*.stories.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    ".output"
+  ]
 }
